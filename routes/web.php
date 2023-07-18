@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::post('/profile/upload', [ProfileController::class, 'upload'])->name('profile.upload');
+
 Route::get('/', function () {
     return view('welcome');
 });
